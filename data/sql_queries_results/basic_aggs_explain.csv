@@ -1,0 +1,4 @@
+id,parent,notused,detail
+7,0,216,SCAN adult
+9,0,0,USE TEMP B-TREE FOR GROUP BY
+57,0,0,USE TEMP B-TREE FOR ORDER BY
