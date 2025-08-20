@@ -24,4 +24,4 @@ Outputs land under `data/`:
 ## Notes
 - Random seeds set to 42.
 - No leakage: all transforms live inside pipelines.
-- Plots saved as PNGs for the README.
+- Plots saved as PNGs for later revision.
