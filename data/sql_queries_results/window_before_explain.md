@@ -1,0 +1,12 @@
+|   id |   parent |   notused | detail                       |
+|-----:|---------:|----------:|:-----------------------------|
+|    3 |        0 |         0 | CO-ROUTINE (subquery-3)      |
+|    6 |        3 |         0 | CO-ROUTINE (subquery-4)      |
+|    8 |        6 |         0 | CO-ROUTINE agg               |
+|   14 |        8 |       216 | SCAN adult                   |
+|   16 |        8 |         0 | USE TEMP B-TREE FOR GROUP BY |
+|   60 |        6 |        82 | SCAN agg                     |
+|   74 |        6 |         0 | USE TEMP B-TREE FOR ORDER BY |
+|   93 |        3 |        81 | SCAN (subquery-4)            |
+|  177 |        0 |        81 | SCAN (subquery-3)            |
+|  253 |        0 |         0 | USE TEMP B-TREE FOR ORDER BY |

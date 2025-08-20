@@ -1,0 +1,3 @@
+cluster_hdb,age,fnlwgt,educational-num,capital-gain,capital-loss,hours-per-week,workclass,education,marital-status,occupation,relationship,race,gender,native-country
+0,47.0,172246.0,14.0,99999.0,0.0,50.0,Private,Prof-school,Married-civ-spouse,Prof-specialty,Husband,White,Male,United-States
+1,37.0,178320.5,10.0,0.0,0.0,40.0,Private,HS-grad,Married-civ-spouse,Craft-repair,Husband,White,Male,United-States

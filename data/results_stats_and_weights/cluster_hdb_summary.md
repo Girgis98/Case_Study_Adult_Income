@@ -1,5 +1,0 @@
-|   cluster_hdb |   age |   fnlwgt |   educational-num |   capital-gain |   capital-loss |   hours-per-week | workclass   | education   | marital-status     | occupation      | relationship   | race   | gender   | native-country   |
-|--------------:|------:|---------:|------------------:|---------------:|---------------:|-----------------:|:------------|:------------|:-------------------|:----------------|:---------------|:-------|:---------|:-----------------|
-|             0 |    47 |   171792 |                13 |          99999 |              0 |               50 | Private     | Prof-school | Married-civ-spouse | Prof-specialty  | Husband        | White  | Male     | United-States    |
-|             1 |    41 |   176046 |                11 |              0 |           1887 |               40 | Private     | HS-grad     | Married-civ-spouse | Exec-managerial | Husband        | White  | Male     | United-States    |
-|             2 |    37 |   177811 |                10 |              0 |              0 |               40 | Private     | HS-grad     | Married-civ-spouse | Craft-repair    | Husband        | White  | Male     | United-States    |

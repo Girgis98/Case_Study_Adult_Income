@@ -1,0 +1,2 @@
+model,valid_auc,valid_pr_auc,test_auc,test_pr_auc,threshold,valid_cm_tn,valid_cm_fp,valid_cm_fn,valid_cm_tp,test_cm_tn,test_cm_fp,test_cm_fn,test_cm_tp
+logreg,0.901755059356912,0.7632231309717927,0.9036640978135184,0.7629249335638235,0.375,5950,844,618,1623,5973,822,666,1574

@@ -1,0 +1,27 @@
+[INFO] loading /home/mladmin/space/software/zeidex-ml-assessment/data/raw/adult.csv
+[INFO] df shape: (45175, 15)
+[INFO] schema ok
+[INFO] splits -> train:27105 valid:9035 test:9035
+[INFO] LogReg fit in 0.620s
+[INFO] HGB fit (grid) in 1.590s | best params={'clf__learning_rate': 0.1, 'clf__max_leaf_nodes': 31, 'clf__min_samples_leaf': 20}
+[logreg] valid AUC=0.9018 PR-AUC=0.7632 | test AUC=0.9037 PR-AUC=0.7629
+[logreg] threshold=0.38
+valid CM:
+[[5950  844]
+ [ 618 1623]]
+test CM:
+[[5973  822]
+ [ 666 1574]]
+[INFO] saved metrics -> /home/mladmin/space/software/zeidex-ml-assessment/data/supervised_results/metrics_logreg.csv
+[hgb] valid AUC=0.9242 PR-AUC=0.8257 | test AUC=0.9247 PR-AUC=0.8248
+[hgb] threshold=0.33
+valid CM:
+[[5886  908]
+ [ 444 1797]]
+test CM:
+[[5860  935]
+ [ 471 1769]]
+[INFO] saved metrics -> /home/mladmin/space/software/zeidex-ml-assessment/data/supervised_results/metrics_hgb.csv
+[INFO] saved logreg coeffs -> /home/mladmin/space/software/zeidex-ml-assessment/data/supervised_results/feature_importance_logreg.csv
+[INFO] saved HGB permutation importance -> /home/mladmin/space/software/zeidex-ml-assessment/data/supervised_results/feature_importance_hgb.csv
+[INFO] wrote test_predictions.csv

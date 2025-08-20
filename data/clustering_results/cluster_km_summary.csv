@@ -1,0 +1,10 @@
+clusters_km,age,fnlwgt,educational-num,capital-gain,capital-loss,hours-per-week,workclass,education,marital-status,occupation,relationship,race,gender,native-country
+0,33.0,172268.5,13.0,0.0,0.0,40.0,Private,Bachelors,Never-married,Prof-specialty,Not-in-family,White,Female,United-States
+1,47.0,164168.5,9.0,0.0,0.0,40.0,Private,HS-grad,Divorced,Adm-clerical,Not-in-family,White,Female,United-States
+2,43.0,167687.0,9.0,0.0,0.0,40.0,Private,HS-grad,Married-civ-spouse,Craft-repair,Husband,White,Male,United-States
+3,32.0,378104.0,9.0,0.0,0.0,40.0,Private,HS-grad,Married-civ-spouse,Craft-repair,Husband,White,Male,United-States
+4,38.0,160786.0,9.0,0.0,0.0,60.0,Private,HS-grad,Married-civ-spouse,Exec-managerial,Husband,White,Male,United-States
+5,47.0,172246.0,14.0,99999.0,0.0,50.0,Private,Prof-school,Married-civ-spouse,Prof-specialty,Husband,White,Male,United-States
+6,23.0,175460.0,9.0,0.0,0.0,40.0,Private,HS-grad,Never-married,Other-service,Own-child,White,Male,United-States
+7,44.0,173893.5,13.0,0.0,0.0,42.0,Private,Bachelors,Married-civ-spouse,Prof-specialty,Husband,White,Male,United-States
+8,41.0,177216.0,10.0,0.0,1902.0,40.0,Private,HS-grad,Married-civ-spouse,Exec-managerial,Husband,White,Male,United-States

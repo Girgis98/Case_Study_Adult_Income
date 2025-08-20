@@ -1,0 +1,56 @@
+[INFO] Loading dataset from /home/mladmin/space/software/zeidex-ml-assessment/data/raw/adult.csv ...
+[INFO] Loaded dataset with shape: (45175, 15)
+[INFO] Schema validation passed.
+[INFO] Running preprocessing + PCA on features: (45175, 14)
+[INFO] PCA transformed shape: (45175, 20)
+[INFO] Evaluating KMeans for k=2..9
+   k= 2 | inertia=371650.85 | silhouette=0.1212
+   k= 3 | inertia=329659.24 | silhouette=0.1410
+   k= 4 | inertia=302672.73 | silhouette=0.1371
+   k= 5 | inertia=285681.61 | silhouette=0.1332
+   k= 6 | inertia=246938.93 | silhouette=0.1454
+   k= 7 | inertia=232616.21 | silhouette=0.1441
+   k= 8 | inertia=223089.09 | silhouette=0.1438
+   k= 9 | inertia=214287.74 | silhouette=0.1457
+[INFO] Saved scores → /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights/clustering_scores.csv
+[INFO] Plotting elbow and silhouette for 8 k-values...
+[INFO] Saved elbow.png and silhouette.png to /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights
+[INFO] Best k chosen by silhouette: 9
+[INFO] Cluster KMeans counts:
+clusters_km
+2    9045
+6    8912
+1    6964
+7    5558
+0    5456
+3    4097
+4    2825
+8    2089
+5     229
+Name: count, dtype: int64
+[INFO] Cluster KMeans summary stats:
+              age    fnlwgt  educational-num  capital-gain  capital-loss  ...       occupation   relationship   race  gender native-country
+clusters_km                                                               ...                                                              
+0            33.0  172268.5             13.0           0.0           0.0  ...   Prof-specialty  Not-in-family  White  Female  United-States
+1            47.0  164168.5              9.0           0.0           0.0  ...     Adm-clerical  Not-in-family  White  Female  United-States
+2            43.0  167687.0              9.0           0.0           0.0  ...     Craft-repair        Husband  White    Male  United-States
+3            32.0  378104.0              9.0           0.0           0.0  ...     Craft-repair        Husband  White    Male  United-States
+4            38.0  160786.0              9.0           0.0           0.0  ...  Exec-managerial        Husband  White    Male  United-States
+5            47.0  172246.0             14.0       99999.0           0.0  ...   Prof-specialty        Husband  White    Male  United-States
+6            23.0  175460.0              9.0           0.0           0.0  ...    Other-service      Own-child  White    Male  United-States
+7            44.0  173893.5             13.0           0.0           0.0  ...   Prof-specialty        Husband  White    Male  United-States
+8            41.0  177216.0             10.0           0.0        1902.0  ...  Exec-managerial        Husband  White    Male  United-States
+
+[9 rows x 14 columns]
+[INFO] Saved dataframe with clusters to: /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights/adult_with_clusters_km.csv
+[INFO] Saved cluster km summary → /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights/cluster_km_summary.csv, /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights/cluster_km_summary.md
+[INFO] Saved KMeans cluster centers (PCA) → /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights/cluster_centers_pca.csv
+[INFO] Running HDBSCAN on PCA space...
+[INFO] HDBSCAN clusters=2, noise=0
+[INFO] HDBSCAN silhouette (non-noise) = 0.7179
+[INFO] Saved HDBSCAN labels → /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights/hdbscan_labels.csv
+[INFO] Saved cluster hdb summary → /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights/cluster_hdb_summary.csv, /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights/cluster_hdb_summary.md
+[INFO] Saved dataframe with KMeans+HDBSCAN labels → /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights/adult_with_clusters_km_hdb.csv
+[INFO] Saved HDBSCAN 2D plot to /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights/HDBSCAN_pca2.png
+[INFO] Saved KMeans 2D plot to /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights/KMeans_pca2.png
+[INFO] All prints also saved to /home/mladmin/space/software/zeidex-ml-assessment/data/results_stats_and_weights/clustering_run.log

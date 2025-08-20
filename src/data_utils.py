@@ -10,7 +10,11 @@ from settings import TARGET, DATA_DIR_PATH
 # Since our EDA revealed no missing columns we just have to convert target column to binary (instead of ">50k" and "<=50K")
 
 def load_clean(path):
-    df = pd.read_csv(path)
+    df = pd.read_csv(path, na_values=["?"]) # replace "?" with NaN
+
+    # Drop rows with NaN and duplicates as they're only a small ratio of data
+    df = df.dropna().drop_duplicates() 
+
     # Make binary 0/1 target
     df[TARGET] = (df[TARGET] == ">50K").astype(int)
     return df
@@ -30,3 +34,5 @@ if __name__ == "__main__":
     df = load_clean(dataset_path)
     AdultSchema.validate(df)
     print("Data loaded and validated successfully.")
+    cleaned_dataset_path = os.path.join(DATA_DIR_PATH, "processed/adult.csv")
+    df.to_csv(cleaned_dataset_path, index=False)

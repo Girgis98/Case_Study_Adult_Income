@@ -1,0 +1,2 @@
+model,valid_auc,valid_pr_auc,test_auc,test_pr_auc,threshold,valid_cm_tn,valid_cm_fp,valid_cm_fn,valid_cm_tp,test_cm_tn,test_cm_fp,test_cm_fn,test_cm_tp
+hgb,0.92416816712439,0.8256966999712979,0.9247493232944393,0.8248031270134454,0.325,5886,908,444,1797,5860,935,471,1769

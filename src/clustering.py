@@ -17,7 +17,7 @@ from settings import NUM_COLS, CAT_COLS, TARGET, DATA_DIR_PATH
 from src.data_utils import load_clean, AdultSchema
 
 
-OUT_DIR = os.path.join(DATA_DIR_PATH, "results_stats_and_weights")
+OUT_DIR = os.path.join(DATA_DIR_PATH, "clustering_results")
 os.makedirs(OUT_DIR, exist_ok=True)
 
 
