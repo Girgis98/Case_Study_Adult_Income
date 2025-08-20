@@ -1,4 +1,4 @@
-# Zeidex ML Assessment — Adult Income
+# Case Study — Adult Income
 
 ## How to run
 ```bash
