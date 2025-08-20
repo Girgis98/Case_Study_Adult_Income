@@ -1,0 +1,16 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+jupyterlab
+xgboost
+lightgbm
+umap-learn
+ydata-profiling
+pandera
+shap
+kagglehub[pandas-datasets]
+fireducks
+tabulate
+hdbscan
