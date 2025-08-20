@@ -11,7 +11,6 @@
 - HDBSCAN found **2 clusters**, capturing a dense majority group and a high-capital-gain niche.
 
 **Notable KMeans clusters (income rate and size):**
-<table>
 | index | p_income_gt_50k | count |
 |-------|-----------------|-------|
 | 5     | 1.000000        |   229 |
@@ -22,8 +21,6 @@
 | 0     | 0.201063        |  5456 |
 | 3     | 0.169636        |  4097 |
 | 1     | 0.086014        |  6964 |
-| 6     | 0.012680        |  8912 |
-</table>
 
 **Interpretation (≤300 words):**
 We embedded the cleaned tabular data into a 20‑D PCA space after scaling numerics and one‑hot encoding categoricals, then clustered in that space. KMeans achieved its best separation at k=9 (silhouette 0.146). One small segment (cluster 5; ~229 records) concentrates extreme `capital-gain≈99,999`, long hours, professional occupations, and a 100% `income>50K` rate—an obvious high‑earner niche. Larger segments show gradations: clusters with higher `educational-num`, professional/managerial occupations, and longer `hours-per-week` trend toward higher income rates (e.g., clusters 7 and 8 with ~0.68 and ~0.52 high‑income). Conversely, clusters tied to lower `educational-num`, clerical/service roles, or fewer weekly hours show markedly lower positive rates (clusters 1 and 6). HDBSCAN, operating without a preset k, recovered a dominant core cluster and a compact high‑gain cluster, aligning with the KMeans picture and lending stability to the segmentation. These segments can guide differentiated thresholds (e.g., risk or targeting), and the concordance across algorithms increases confidence that separation is driven by education/occupation/hours and capital flows rather than noise.
